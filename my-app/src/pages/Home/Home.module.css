@@ -1,0 +1,108 @@
+.homeContainer {
+    display: flex;
+}
+
+.homeContent {
+    display: flex;
+    margin: 32px auto;
+    gap: 220px;
+}
+
+.listContainer {
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 556px;
+    margin-top: 8px;
+}
+
+.monthTitle {
+    padding: 12px 0 0 14px;
+    color: var(--primary-purple);
+    font-weight: 700;
+    font-size: 24px;
+    margin: 8px;
+}
+
+.pendingSubscriptionsList {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        margin: 0;
+        padding: 0 32px 18px 26px;
+    }
+}
+
+.listTitle {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 0 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-purple);
+
+    button {
+        width: 25px;
+        margin-left: 12px;
+        color: white;
+        background-color: var(--primary-purple);
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.toDoTask {
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    margin: 8px 0 0 0 ;
+
+    input[type="checkbox"] {
+      accent-color: var(--primary-purple); 
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+}
+
+.deleteBin {
+    display: flex;
+    margin-left: 12px;
+    color: red;
+    cursor: pointer;
+}
+
+.disableddeleteBin {
+   visibility: hidden;
+}
+
+.taskInput {
+    width: 30vh;
+    margin: 12px 0 12px 24px;
+    padding: 6px 14px;
+    border: none;
+    outline: none;
+    background-color:var(--background-purple);
+    border-radius: 25px;
+
+}
+input::placeholder {
+    font-family: 'Gotham';
+    color: var(--primary-purple);
+}
+
+.insertTask {
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 14px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+

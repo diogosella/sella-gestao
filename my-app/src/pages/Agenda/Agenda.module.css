@@ -1,0 +1,26 @@
+.agendaContainer {
+    display: flex;
+}
+
+.calendar {
+    width: 65vw;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 80vh;
+    margin-top: 48px;
+}
+
+ .listTitle {
+     display: flex;
+     align-items: center;
+     margin: 0 0 8px 18px;
+     font-size: 32px;
+     font-weight: 700;
+     color: var(--primary-purple);
+ }

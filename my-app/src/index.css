@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("./assets/fonts/gotham-rounded-book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("./assets/fonts/gotham-rounded-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --primary-purple: #350956;
+  --secondary-purple: #A075BF;
+  --background-purple: #d0c5da;
+  --yellow: #C19E38;
+
+  --navbar: 20px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham", sans-serif;
+  background-color: var(--background-purple);
+}
+
+.pageContent {
+  display: flex;
+}

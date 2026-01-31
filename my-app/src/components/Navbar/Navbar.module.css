@@ -1,0 +1,42 @@
+
+
+.navContainer {
+    position: sticky;
+    background-color: var(--primary-purple);
+    width: 280px;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo {
+    width: 80%;
+    margin: 48px auto;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.active {
+    color: var(--primary-purple);
+    background-color: var(--yellow);
+    text-decoration: none;
+    font-size: var(--navbar);
+    font-weight: 700;
+    padding: 12px 54px;
+}
+
+.inactive {
+    color: var(--yellow);
+    text-decoration: none;
+    font-size: var(--navbar);
+    font-weight: 700;
+    padding: 12px 54px;
+}

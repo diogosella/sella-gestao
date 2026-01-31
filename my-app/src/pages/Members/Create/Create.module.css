@@ -1,0 +1,91 @@
+.createMemberContainer {
+    display: flex;
+}
+
+.memberCreation {
+    width: 65%;
+    margin: 120px auto;
+}
+
+.listTitle {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 18px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-purple);
+}
+
+.creationForm {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 36px 18px 0;
+    background-color: white;
+    border-radius: 32px;
+
+    label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: var(--primary-purple);
+    }
+
+    input, select {
+        padding: 3px 8px;
+        outline: none;
+        border: 2px solid var(--primary-purple);
+        border-radius: 15px;
+
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+    display: none;
+    margin: 0;
+}
+}
+
+
+
+.formSection {
+    margin-bottom: 28px;
+}
+
+.formTitle {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 38px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-purple);
+}
+
+.formGroup {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+ul {
+    margin: 8px 0;
+}
+
+li {
+    display: flex;
+    gap: 28px;
+}
+
+.registerMemberButton {
+    width: 20%;
+    margin: 0 auto;
+    padding: 8px;
+    color: white;
+    background-color: var(--primary-purple);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 18px;
+}
