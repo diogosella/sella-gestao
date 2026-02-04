@@ -3,14 +3,16 @@ import Home from './pages/Home'
 import Members from './pages/Members'
 import Create from './pages/Members/Create'
 import Agenda from './pages/Agenda'
+import Payments from './pages/Payments'
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/pages/Home/index.tsx" element={<Home />} />
-      <Route path="/pages/Members/index.tsx" element={<Members />} />
-      <Route path="/pages/Members/Create/index.tsx" element={<Create />} />
-      <Route path="/pages/Agenda/index.tsx" element={<Agenda />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/members" element={<Members />} />
+      <Route path="/create" element={<Create />} />
+      <Route path="/agenda" element={<Agenda />} />
+      <Route path="/payments" element={<Payments />} />
     </Routes>
   )
 }

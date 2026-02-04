@@ -9,10 +9,10 @@ export default function Navbar() {
             <nav className={styles.navBar}>
                 <img className={styles.logo} src={logo} alt="Logo" />
                     <li className={styles.navItems}>
-                        <NavLink to="../pages/Home/index.tsx"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Painel</NavLink>
-                        <NavLink to="../pages/Members/index.tsx"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Alunos</NavLink>
-                        <NavLink to="../pages/Agenda/index.tsx"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Agenda</NavLink>
-                        <NavLink to="../pages/idkkk/index.tsx"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Pagamentos</NavLink>
+                        <NavLink to="/"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Painel</NavLink>
+                        <NavLink to="/members"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Alunos</NavLink>
+                        <NavLink to="/agenda"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Agenda</NavLink>
+                        <NavLink to="/payments"className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>Pagamentos</NavLink>
                     </li>
             </nav>
         </div>

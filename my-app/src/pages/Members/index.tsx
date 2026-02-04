@@ -15,7 +15,7 @@ export default function Members() {
     const [members, setMembers] = useState<Members[]>([])
 
     useEffect(() => {
-        fetch("http://localhost:8000/members")
+        fetch("http://localhost:5153/members")
         .then(res => res.json())
         .then(data => setMembers(data))
     }, [])
@@ -28,9 +28,9 @@ export default function Members() {
             console.log(value);
         }
 
-        const filteredMembers = members.filter(member => (
-            member.name.toLowerCase().includes(search) ||
-            member.tel.toString().includes(search)  
+        const filteredMembers = members.filter(m => (
+            m.name.toLowerCase().includes(search) ||
+            m.tel.toString().includes(search)  
         ))      
 
     return (
@@ -40,7 +40,7 @@ export default function Members() {
 
         <div className={styles.memberListContainer}>
             <div className={styles.memberListHeader}>
-              <p className={styles.listTitle}>Alunos<Link to={'/pages/Members/Create/index.tsx'} className={styles.addMemberButton}>+</Link></p>
+              <p className={styles.listTitle}>Alunos<Link to={'/create'} className={styles.addMemberButton}>+</Link></p>
               <input onChange={spyInput} className={styles.searchBar} placeholder='Pesquisar' />
         </div>
 
@@ -50,9 +50,9 @@ export default function Members() {
 
                 <ul className={styles.listColumn}><p className={styles.columnTitle}>Nome</p>
 
-                    {filteredMembers.map(member => (
-                    <li key={member.id} className={styles.listItem}>
-                        {member.name}
+                    {filteredMembers.map(m => (
+                    <li key={m.id} className={styles.listItem}>
+                        {m.name}
                     </li>
                     ))}
 
@@ -60,9 +60,9 @@ export default function Members() {
 
                 <ul className={styles.listColumn}><p className={styles.columnTitle}>Telefone</p>
 
-                    {filteredMembers.map(member => (
-                    <li key={member.id} className={styles.listItem}>
-                        {member.tel}
+                    {filteredMembers.map(m => (
+                    <li key={m.id} className={styles.listItem}>
+                        {m.tel}
                     </li>
                     ))}
 
@@ -70,17 +70,17 @@ export default function Members() {
 
                 <ul className={styles.listColumn}><p className={styles.columnTitle}>Email</p>
 
-                    {filteredMembers.map(member => (
-                    <li key={member.id} className={styles.listItem}>
-                        {member.email}
+                    {filteredMembers.map(m => (
+                    <li key={m.id} className={styles.listItem}>
+                        {m.email}
                     </li>
                     ))}
                 </ul>
 
                 <ul className={styles.listColumn}><p className={styles.columnTitle}><span>-</span></p>
-                    {filteredMembers.map(member => (
-                    <li key={member.id} className={styles.listItemButton}>
-                        <Link to={"/Edit/" + member.id} className={styles.seeMoreButton}>Ver mais</Link>
+                    {filteredMembers.map(m => (
+                    <li key={m.id} className={styles.listItemButton}>
+                        <Link to={"/edit" + m.id} className={styles.seeMoreButton}>Ver mais</Link>
                     </li>
                     ))}
                 </ul>
